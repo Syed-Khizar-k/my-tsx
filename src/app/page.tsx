@@ -1,101 +1,51 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main className="bg-white">
+      <section className="header h-[100vh] bg-[linear-gradient(rgba(81,126,134,0.77),rgba(148,159,223,0.1)),url('/banner1.png')]  bg-center  bg-cover px-[5.5vw] py-[2.3vw] relative">
+        {/* navbar of the page*/}
+        <Navbar />
+        <div className="header-text text-center relative top-[8vw]">
+          <h1 className="text-[6.5vw] font-extrabold text-lime leading-[0.9]">
+            GET READY
+          </h1>
+          <h2 className="text-[3.2vw] font-extrabold ">TO DISCOVER CAMPUS</h2>
+          <p className="text-[18px] text-[#ffff] px-[10vw] py-[20px]">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ullam
+            placeat eius, magni aliquam officia? Nesciunt accusamus dolorem eius
+            magni!
+          </p>
+          <button className="border border-gray-800 px-[34px] py-[12px] rounded-[5px] hover:bg-lime transition duration-1000">
+            Visit Us To Know More
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+      {/* //courses section : */}
+      <section className="courses pt-[4vw]">
+        <div className="empty-boxes px-[5.5vw] py-[2.3vw] flex justify-between w-[100%] ">
+          <div className="w-[50%]   border-lime p-[5vw]"></div>
+          <div className=" w-[50%] border-l-2 border-lime p-[5vw]"></div>
+        </div>
+        <h1 className="heading text-lime text-[46px] font-[900] uppercase  text-center leading-[3rem]">
+          explore our 60+ <br /> major programs
+        </h1>
+        <p className="text-center text-grey p-[15px]">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        </p>
+        <div className="cards">
+          <div className="card">
+            <h1>Undergaraduate Program</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              dolor corporis, commodi nihil quas soluta labore quisquam impedi
+              distinctio explicabo aut minima quos pariatur unde aliquam earum
+              laborum velit non.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
