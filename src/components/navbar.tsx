@@ -1,52 +1,55 @@
 import Link from "next/link";
 export const Navbar = () => {
   return (
-    <nav className="navigation flex justify-between  items-center ">
+    <nav className="navigation w-full flex justify-between  items-center ">
       <a
         href="page.tsx"
-        className="text-[28px] font-extrabold flex text-center items-center">
+        className="text-[22px] sm:text-[28px] font-extrabold flex text-center items-center">
         <span> Xplore</span>
-        <img src="/LOGO.svg" alt="" className="h-[58px] w-[46px] p-[2px]" />
+        <img src="/LOGO.svg" alt="" className="h-[48px] w-[36px] p-[2px]" />
         <span>kill</span>
       </a>
       <div>
-        <ul className="flex gap-[2vw] font-medium text-[18px]">
+        <ul className="md:flex hidden gap-[2vw] font-medium text-[18px] ">
           <li>
-            <a
+            <Link
               href="#"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               HOME
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               COURSE
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               BLOG
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#"
+            <Link
+              href="/about"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               ABOUT
-            </a>
+            </Link>
           </li>
           <li>
-            <a
+            <Link
               href="#"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               CONTACT
-            </a>
+            </Link>
           </li>
         </ul>
+        <div className="md:hidden text-[44px] items-center">
+          <a href="#">&#8801;</a>
+        </div>
       </div>
     </nav>
   );
