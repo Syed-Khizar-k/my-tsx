@@ -19,6 +19,7 @@ export default {
         grey: "#777",
         blacky: "#000000",
         pinkish: "#fff3f3",
+        greyl: "rgb(240, 240, 240)",
       },
     },
   },

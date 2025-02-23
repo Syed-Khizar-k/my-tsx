@@ -41,7 +41,7 @@ export const Navbar = () => {
           </li>
           <li>
             <Link
-              href="#"
+              href="/contact"
               className="relative text-white after:block after:h-[2px] after:bg-[#24f8c7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
               CONTACT
             </Link>
