@@ -1,6 +1,4 @@
 import {
-  FaStar,
-  FaStarHalfAlt,
   FaLinkedin,
   FaFacebook,
   FaInstagram,

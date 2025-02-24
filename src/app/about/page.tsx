@@ -13,7 +13,7 @@ const aboutPage = () => {
       <section className="px-[7vw] py-[12.3vw] flex flex-col-reverse md:flex-row w-full">
         <div className="text-sec md:w-[50%] px-[28px] py-[10px]">
           <h1 className="uppercase md:text-[46px] text-[22px] font-extrabold text-lime md:leading-[46px] py-[10px]">
-            We are the world's largest University
+            We are the worlds largest University
           </h1>
           <p className="text-grey py-[20px] ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore

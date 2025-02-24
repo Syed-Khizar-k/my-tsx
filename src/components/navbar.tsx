@@ -2,13 +2,13 @@ import Link from "next/link";
 export const Navbar = () => {
   return (
     <nav className="navigation w-full flex justify-between  items-center ">
-      <a
+      <Link
         href="/"
         className="text-[22px] sm:text-[28px] font-extrabold flex text-center items-center border-none  ">
         <span> Xplore</span>
         <img src="/LOGO.svg" alt="" className="h-[48px] w-[36px] p-[2px]" />
         <span>kill</span>
-      </a>
+      </Link>
       <div>
         <ul className="md:flex hidden gap-[2vw] font-medium text-[18px] ">
           <li>
