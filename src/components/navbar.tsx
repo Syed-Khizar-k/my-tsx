@@ -1,7 +1,7 @@
 import Link from "next/link";
 export const Navbar = () => {
   return (
-    <nav className="navigation w-full flex justify-between  items-center ">
+    <nav className="navigation w-full flex justify-between  items-center text-white ">
       <Link
         href="/"
         className="text-[22px] sm:text-[28px] font-extrabold flex text-center items-center border-none  ">
