@@ -22,8 +22,8 @@ const contactUs = () => {
           loading="lazy"></iframe>
       </section>
       {/* Left Deatails  */}
-      <section className="px-[10.5vw] py-[2.3vw] flex justify-center">
-        <div className="l-details w-[50%]">
+      <section className="px-[10.5vw] py-[2.3vw] flex md:justify-center flex-wrap">
+        <div className="l-details md:w-[50%] w-full">
           <div className="flex items-center gap-[30px] py-[20px]">
             <div>
               <FaHome className="text-[32px] text-lime"></FaHome>
@@ -55,7 +55,7 @@ const contactUs = () => {
           </div>
         </div>
         {/* right details */}
-        <div className="r-details w-[50%]">
+        <div className="r-details md:w-[50%] w-full">
           <form>
             <input
               type="text"

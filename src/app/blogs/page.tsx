@@ -89,27 +89,27 @@ const blogsPage = () => {
             Post Categories
           </h1>
           <ul className="py-[15px] px-[5px]">
-            <li className=" text-[16px] text-gray-700 py-[8px]">
+            <li className=" text-[16px] text-gray-700 py-[8px] hover:text-lime">
               <a href="#" className="flex justify-between">
                 <span>Business Analytics</span> <span>12</span>
               </a>
             </li>
-            <li className=" text-[16px] text-gray-700 py-[8px]">
+            <li className=" text-[16px] text-gray-700 py-[8px] hover:text-lime">
               <a href="#" className="flex justify-between">
                 <span>Machine Learning</span> <span>29</span>
               </a>
             </li>
-            <li className=" text-[16px] text-gray-700 py-[8px]">
+            <li className=" text-[16px] text-gray-700 py-[8px] hover:text-lime">
               <a href="#" className="flex justify-between">
                 <span>Computer Science</span> <span>15</span>
               </a>
             </li>
-            <li className=" text-[16px] text-gray-700 py-[8px]">
+            <li className=" text-[16px] text-gray-700 py-[8px] hover:text-lime">
               <a href="#" className="flex justify-between">
                 <span>Data Analytics</span> <span>22</span>
               </a>
             </li>
-            <li className=" text-[16px] text-gray-700 py-[8px]">
+            <li className=" text-[16px] text-gray-700 py-[8px] hover:text-lime">
               <a href="#" className="flex justify-between">
                 <span>Full Stack</span> <span>20</span>
               </a>
